@@ -1,0 +1,10 @@
+require("config.options")
+require("config.autocmds")
+require("config.keymaps")
+require("config.diagnostics")
+
+require("plugins.colorscheme")
+require("plugins.treesitter")
+require("plugins.lsp")
+require("plugins.conform")
+require("plugins.mini-nvim")

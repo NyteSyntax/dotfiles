@@ -1,0 +1,46 @@
+theme = "my-kanagawa"
+
+[editor]
+# line-number = "relative"
+# mouse = false
+auto-save = true
+end-of-line-diagnostics = "error"
+
+[editor.statusline]
+left = ["mode", "spinner", "read-only-indicator", "file-modification-indicator"]
+center = ["file-name", "version-control"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.indent-guides]
+render = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning" # show warnings and errors on the cursorline inline
+
+# [editor.soft-wrap]
+# enable = true
+
+# [editor.smart-tab]
+# supersede-menu = true
+
+[keys.normal]
+"A-k" = ["goto_line_end","extend_line_below", "delete_selection", "move_line_up", "paste_before"]
+"A-j" = ["goto_line_end","extend_line_below", "delete_selection", "paste_after"]
+"A-s" = ":w"
+
+[keys.select]
+"A-k" = ["goto_line_end","extend_line_below",  "delete_selection", "move_line_up", "paste_before", "select_mode"]
+"A-j" = ["goto_line_end","extend_line_below",  "delete_selection", "paste_after", "select_mode" ]
+
+
+[editor.file-picker]
+hidden = false
+
+
+
+[editor.lsp]
+display-inlay-hints = true
