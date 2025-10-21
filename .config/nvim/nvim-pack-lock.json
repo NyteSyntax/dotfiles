@@ -4,6 +4,10 @@
       "rev": "960a5cf",
       "src": "https://github.com/b0o/SchemaStore.nvim"
     },
+    "cmp-path": {
+      "rev": "c642487",
+      "src": "https://github.com/hrsh7th/cmp-path"
+    },
     "conform.nvim": {
       "rev": "fbcb4fa",
       "src": "https://github.com/stevearc/conform.nvim"

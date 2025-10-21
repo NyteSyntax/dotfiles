@@ -16,3 +16,13 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 		end
 	end,
 })
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+	pattern = "*",
+	callback = function()
+		vim.api.nvim_set_hl(0, "@lsp.type.namespace", { fg = "#FFA066" })
+		vim.api.nvim_set_hl(0, "@lsp.type.function", { fg = "#7E9CD8" })
+		vim.api.nvim_set_hl(0, "@lsp.typemod.variable.readonly", { fg = "#DCD7BA" }) -- const variables in for loops
+		vim.api.nvim_set_hl(0, "@lsp.typemod.variable.local", { fg = "#DCD7BA" })
+	end,
+})
