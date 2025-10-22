@@ -21,6 +21,7 @@ require("conform").setup({
 		cpp = { "clang-format" },
 		zig = { "zigfmt" },
 		odin = { "odinfmt" },
+		rust = { "rustfmt" },
 		json = { "biome" },
 		jsonc = { "biome" },
 		javascript = { "biome", "biome-organize-imports" },

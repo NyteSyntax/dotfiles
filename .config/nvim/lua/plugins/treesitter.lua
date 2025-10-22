@@ -2,7 +2,7 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
 })
 
-local treesitters = { "lua", "c", "cpp", "yaml", "json", "zig", "odin" }
+local treesitters = { "lua", "c", "cpp", "yaml", "json", "zig", "odin", "rust" }
 
 require("nvim-treesitter").install(treesitters)
 
